@@ -11,7 +11,4 @@ Vue.prototype.x = d */
 new Vue({
 	el: '#app',
 	render: h => h(App),
-	beforeCreate() {
-		Vue.prototype.$bus = this//this就是new的vm；安装全局事件总线($bus)
-	}
 })
